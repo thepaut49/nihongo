@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.oc.rss.nihongo">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.SecondActivity"/>
+        <activity android:name=".Activities.ListeKatakanaActivity"/>
+        <activity android:name=".Activities.ListeHiraganaActivity"/>
+        <activity android:name=".Activities.RechercheActivity"/>
+        <activity android:name=".Activities.RechercheVocabulaireActivity"/>
+        <activity android:name=".Activities.KanjiListActivity"/>
+        <activity android:name=".Activities.VocabularyListActivity"/>
+        <activity android:name=".Activities.FicheKanjiVisuActivity"/>
+        <activity android:name=".Activities.FicheVocabularyVisuActivity"/>
+        <activity android:name=".Activities.TraductionActivity"/>
+        <activity android:name=".Activities.QuizzActivity"/>
+        <activity android:name=".Activities.QuizzMenuActivity"/>
+        <activity android:name=".Activities.ResultQuizzActivity"/>
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

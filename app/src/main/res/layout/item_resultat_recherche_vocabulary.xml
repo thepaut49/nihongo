@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:background="@color/common_action_bar_splitter"
+    android:padding="10dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id : "
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            tools:fontFamily="cursive"
+            />
+
+        <TextView
+            android:id="@+id/idVocabularyResultItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:text="IdVocabulary"
+            ></TextView>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/characterVocabularyResultItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="top|left"
+        android:textSize="30sp"
+        android:text="Word"
+        android:padding="15dp"></TextView>
+
+
+
+    <TextView
+        android:id="@+id/pronunciationVocabularyResultItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Pronunciation"
+        android:gravity="left|center_vertical"></TextView>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="1. "
+            android:gravity="left|center_vertical"
+            android:textColor="@color/colorPrimaryDark"></TextView>
+
+        <TextView
+            android:id="@+id/meaning1VocabularyResultItem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Meaning1"
+            android:gravity="left|center_vertical"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="2. "
+            android:gravity="left|center_vertical"
+            android:textColor="@color/colorPrimaryDark"></TextView>
+
+        <TextView
+            android:id="@+id/meaning2VocabularyResultItem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Meaning2"
+            android:gravity="left|center_vertical"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="3. "
+            android:gravity="left|center_vertical"
+            android:textColor="@color/colorPrimaryDark"></TextView>
+
+        <TextView
+            android:id="@+id/meaning3VocabularyResultItem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Meaning3"
+            android:gravity="left|center_vertical"></TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

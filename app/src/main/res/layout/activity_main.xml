@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quizz"
+            android:id="@+id/buttonQuizz"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textColor="@color/common_signin_btn_dark_text_default"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            tools:fontFamily="cursive"></Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="練習"
+            android:id="@+id/buttonTraining"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textColor="@color/common_signin_btn_dark_text_default"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            tools:fontFamily="cursive"></Button>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ひらがな"
+            android:id="@+id/buttonHiragana"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textColor="@color/common_signin_btn_dark_text_default"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            tools:fontFamily="cursive"></Button>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="カタカナ"
+            android:id="@+id/buttonKatakana"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textColor="@color/common_signin_btn_dark_text_default"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            tools:fontFamily="cursive"></Button>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="漢字"
+            android:id="@+id/buttonKanji"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textColor="@color/common_signin_btn_dark_text_default"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            tools:fontFamily="cursive"></Button>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="語彙"
+            android:id="@+id/buttonVocabulaire"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textColor="@color/common_signin_btn_dark_text_default"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            tools:fontFamily="cursive"></Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Translate"
+            android:id="@+id/buttonTrad"
+            android:gravity="center"
+            android:textSize="50sp"
+            android:textColor="@color/common_signin_btn_dark_text_default"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            tools:fontFamily="cursive"></Button>
+
+    </LinearLayout>
+</ScrollView>

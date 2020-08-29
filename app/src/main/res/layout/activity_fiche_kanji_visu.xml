@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerViewKanjiVisu"
+            ></android.support.v7.widget.RecyclerView>
+
+        <ProgressBar
+            android:id="@+id/progressKanjiVisu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_gravity="center" />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="horizontal"
+           android:layout_margin="20dp">
+
+            <Button
+                android:id="@+id/buttonRechercheAssociated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Search"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/common_signin_btn_dark_text_default"
+                android:layout_margin="20dp" />
+
+            <Button
+                android:id="@+id/buttonAddToString"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="Add"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="@color/common_signin_btn_dark_text_default"
+                android:layout_margin="20dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="left|center_vertical"
+            android:textSize="35sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="List of associated vocabulary"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/associatedVocabularyKanjiVisu"
+            ></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+</ScrollView>
+
+

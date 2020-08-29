@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search : "
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            tools:fontFamily="cursive"
+            android:textSize="25sp"
+            />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/rechercheVocabulary"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="input"
+                android:inputType="text"
+                tools:fontFamily="cursive"/>
+
+            <ImageButton
+                android:id="@+id/traductionRechercheVocabulary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_translate_black_24dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+
+            <Button
+                android:id="@+id/nHiraganaVoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ん"
+                android:gravity="center"
+                android:textSize="25sp"/>
+
+            <Button
+                android:id="@+id/nKatakanaVoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ン"
+                android:gravity="center"
+                android:textSize="25sp"/>
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/groupVocabulary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/radio1"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/radioKanjiVoca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kanji"
+                android:textColor="@color/colorPrimaryDark"
+                tools:fontFamily="cursive"
+                android:textSize="25sp"
+                android:checked="true" />
+            <RadioButton
+                android:id="@+id/radioKanaVoca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kana"
+                android:textColor="@color/colorPrimaryDark"
+                tools:fontFamily="cursive"
+                android:textSize="25sp"
+                />
+            <RadioButton
+                android:id="@+id/radioMeaningVoca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meaning"
+                android:textColor="@color/colorPrimaryDark"
+                tools:fontFamily="cursive"
+                android:textSize="25sp"
+                />
+        </RadioGroup>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <ImageButton
+                android:id="@+id/rechercherVocabulary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search_black_24dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:id="@+id/razVocabulary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RAZ"
+                android:textSize="25sp"
+                android:textStyle="normal|bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Results:"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            tools:fontFamily="cursive"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:id="@+id/resultVocabulary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="You have to press « search » to get some result."
+            tools:fontFamily="cursive"
+            android:textSize="25sp"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listResultatVocabulary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</ScrollView>

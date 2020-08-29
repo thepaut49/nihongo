@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search : "
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            tools:fontFamily="cursive"
+            android:textSize="25sp"
+            />
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rechercheRadical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                tools:fontFamily="cursive"
+                android:textSize="25sp"/>
+
+            <ImageButton
+                android:id="@+id/rechercherRadicalCorrection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_clear_black_24dp" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/recherche"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="input text"
+                android:inputType="text"
+                tools:fontFamily="cursive"
+                android:textSize="25sp"/>
+
+            <ImageButton
+                android:id="@+id/traductionRechercheKanji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_translate_black_24dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+
+            <Button
+                android:id="@+id/nHiraganaKanji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ん"
+                android:gravity="center"
+                android:textSize="25sp"/>
+
+            <Button
+                android:id="@+id/nKatakanaKanji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ン"
+                android:gravity="center"
+                android:textSize="25sp"/>
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/radio1"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Radicals"
+                android:textColor="@color/colorPrimaryDark"
+                tools:fontFamily="cursive"
+                android:textSize="25sp"
+                />
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kana"
+                android:textColor="@color/colorPrimaryDark"
+                tools:fontFamily="cursive"
+                android:textSize="25sp"
+                />
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meaning"
+                android:textColor="@color/colorPrimaryDark"
+                tools:fontFamily="cursive"
+                android:textSize="25sp"
+                />
+        </RadioGroup>
+
+        <com.oc.rss.nihongo.View.ExpandableHeightGridView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/listRadical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:columnWidth="40dp"
+            android:isScrollContainer="false"
+            android:gravity="center"
+            android:horizontalSpacing="4dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="4dp"
+            android:background="@color/colorPrimaryDark"
+            android:paddingLeft="4dp"
+            android:paddingTop="4dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="4dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <ImageButton
+                android:id="@+id/rechercher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search_black_24dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:id="@+id/raz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RAZ"
+                tools:fontFamily="cursive"
+                android:textSize="25sp"
+                android:textStyle="normal|bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Results:"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center"
+            tools:fontFamily="cursive"
+            android:textSize="25sp"
+            />
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="You have to press « search » to get some result."
+            tools:fontFamily="cursive"
+            android:textSize="25sp"
+            />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listResultatKanji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_gravity="center" />
+
+
+    </LinearLayout>
+
+</ScrollView>
